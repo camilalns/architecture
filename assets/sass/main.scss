@@ -3,8 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Quicksand:wght@500&display=swap');
 
-
-
+body{
+    background-color: $background-color;
+}
 .hero{
     display: flex;
     flex-direction: column;
@@ -38,7 +39,7 @@
 
         @media (min-width: 992px){
             margin: 68px 116px;
-          }
+        }
     }
 
     .hero-title{
@@ -70,13 +71,11 @@
 
         @media (min-width: 992px){
             margin: 24px 116px;
-          }
-      }
-
-      
+        }
+    }
 }
 
-.section-about{
+.about{
     margin: 36px 16px;
 
     @media (min-width: 992px){
@@ -123,3 +122,107 @@
     }
     
 }
+
+.service{
+    margin: 0 16px;
+
+    .service-block{
+
+        .title{
+            font-family: Patua One;
+            font-size: 34px;
+            color: $black-color;
+            margin: 0 0 14px 0;
+        }
+        .interior-design{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(12, 0, 61, 0.15);
+            width: auto;
+            height: 124px;
+            margin: 14px 0;
+           
+            .content{
+                max-width: 228px;
+               
+                .title-service{
+                    font-family: Patua One;
+                    color: $black-color;
+                    font-size: 22px;
+                    margin: 8px 0;
+                }
+                .text-service{
+                    font-family: Quicksand;
+                    color: $black-color;
+                    font-size: 16px;
+                }
+            }
+            .image-service{
+                width: 58px;
+                color: $secundary-color;
+            }
+        }
+
+        .architecture-design{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(12, 0, 61, 0.15);
+            width: auto;
+            height: 124px;
+            margin: 14px 0;
+           
+            .content{
+                max-width: 228px;
+               
+                .title-service{
+                    font-family: Patua One;
+                    color: $black-color;
+                    font-size: 22px;
+                    margin: 8px 0;
+                }
+                .text-service{
+                    font-family: Quicksand;
+                    color: $black-color;
+                    font-size: 16px;
+                }
+            }
+            .image-service{
+                width: 58px;
+                color: $secundary-color;
+            }
+        }
+
+        .remodeling-design{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(12, 0, 61, 0.15);
+            width: auto;
+            height: 124px;
+            margin: 14px 0;
+           
+            .content{
+                max-width: 228px;
+               
+                .title-service{
+                    font-family: Patua One;
+                    color: $black-color;
+                    font-size: 22px;
+                    margin: 8px 0;
+                }
+                .text-service{
+                    font-family: Quicksand;
+                    color: $black-color;
+                    font-size: 16px;
+                }
+            }
+            .image-service{
+                width: 58px;
+                color: $secundary-color;
+            }
+        }
+    }
+}
+
