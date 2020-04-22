@@ -191,11 +191,25 @@ body {
   margin: 0 16px;
 }
 
-.service .service-block .title {
+.service .title {
   font-family: Patua One;
   font-size: 34px;
   color: #141313;
   margin: 0 0 14px 0;
+}
+
+@media (min-width: 1024px) {
+  .service .title {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .service .service-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .service .service-block .interior-design {
@@ -206,6 +220,13 @@ body {
   width: auto;
   height: 124px;
   margin: 14px 0;
+}
+
+@media (min-width: 992px) {
+  .service .service-block .interior-design {
+    margin: 0 14px;
+    padding: 0 18px;
+  }
 }
 
 .service .service-block .interior-design .content {
@@ -240,6 +261,13 @@ body {
   margin: 14px 0;
 }
 
+@media (min-width: 992px) {
+  .service .service-block .architecture-design {
+    margin: 0 14px;
+    padding: 0 18px;
+  }
+}
+
 .service .service-block .architecture-design .content {
   max-width: 228px;
 }
@@ -270,6 +298,13 @@ body {
   width: auto;
   height: 124px;
   margin: 14px 0;
+}
+
+@media (min-width: 992px) {
+  .service .service-block .remodeling-design {
+    margin: 0 14px;
+    padding: 0 18px;
+  }
 }
 
 .service .service-block .remodeling-design .content {
