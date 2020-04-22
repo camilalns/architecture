@@ -49,7 +49,8 @@
 
         @media (min-width: 992px){
             margin: 0 116px;
-          }
+            font-size: 48px;
+        }
     }
 
     .budget-button{
@@ -77,12 +78,18 @@
 
 .section-about{
     margin: 36px 16px;
-    // max-width: 1666px;
-    // min-width: 1666px;
 
     @media (min-width: 992px){
         display: flex;
         justify-content: center;
+        max-width: 992px;
+    }
+
+    @media (min-width: 1280px){
+        display: flex;
+        margin: 36px auto;
+        max-width: 1280px;
+        min-width: 1280px;
     }
 
     .text-about{
@@ -96,10 +103,6 @@
             font-size: 18px;
             line-height: 28px;
             margin: 14px 0;
-        }
-
-        @media (min-width: 992px){
-            width: 50%;
         }
     }
 

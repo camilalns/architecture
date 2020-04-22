@@ -103,6 +103,7 @@ table {
 @media (min-width: 992px) {
   .hero .hero-title {
     margin: 0 116px;
+    font-size: 48px;
   }
 }
 
@@ -136,6 +137,16 @@ table {
   .section-about {
     display: flex;
     justify-content: center;
+    max-width: 992px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-about {
+    display: flex;
+    margin: 36px auto;
+    max-width: 1280px;
+    min-width: 1280px;
   }
 }
 
@@ -150,12 +161,6 @@ table {
   font-size: 18px;
   line-height: 28px;
   margin: 14px 0;
-}
-
-@media (min-width: 992px) {
-  .section-about .text-about {
-    width: 50%;
-  }
 }
 
 .section-about .video-about iframe {
