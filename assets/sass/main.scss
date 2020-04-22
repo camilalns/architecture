@@ -124,20 +124,33 @@ body{
 }
 
 .service{
-    margin: 0 16px;
-
     .title{
         font-family: Patua One;
         font-size: 34px;
         color: $black-color;
-        margin: 0 0 14px 0;
+        margin: 14px 0;
 
-        @media(min-width: 1024px){
-            margin: 0 auto;
+        @media(min-width: 992px){
+            margin: 0 18px;
+        }
+
+        @media (min-width: 1280px){
+            display: flex;
+            margin: 36px auto;
+            max-width: 1280px;
+            min-width: 1280px;
         }
     }
 
     .service-block{
+
+        @media (min-width: 1280px){
+            display: flex;
+            margin: 36px auto;
+            max-width: 1280px;
+            min-width: 1280px;
+        }
+
         @media(min-width: 992px){
             display: flex;
             flex-direction: row;
@@ -156,26 +169,39 @@ body{
             @media(min-width: 992px){
                 margin: 0 14px;
                 padding: 0 18px;
+                width: auto;
             }
            
             .content{
-                max-width: 228px;
+                min-width: 228px;
                
                 .title-service{
                     font-family: Patua One;
                     color: $black-color;
                     font-size: 22px;
                     margin: 8px 0;
+                    
+                    @media(min-width: 992px){
+                        font-size: 24px;
+                    }
                 }
                 .text-service{
                     font-family: Quicksand;
                     color: $black-color;
                     font-size: 16px;
+
+                    @media(min-width: 992px){
+                        font-size: 18px;
+                    }
                 }
             }
             .image-service{
                 width: 58px;
                 color: $secundary-color;
+                
+                @media(min-width: 992px){
+                    font-size: 68px;
+                }
             }
         }
         .architecture-design{
@@ -194,23 +220,35 @@ body{
            
            
             .content{
-                max-width: 228px;
+                min-width: 228px;
                
                 .title-service{
                     font-family: Patua One;
                     color: $black-color;
                     font-size: 22px;
                     margin: 8px 0;
+                    
+                    @media(min-width: 992px){
+                        font-size: 24px;
+                    }
                 }
                 .text-service{
                     font-family: Quicksand;
                     color: $black-color;
                     font-size: 16px;
+
+                    @media(min-width: 992px){
+                        font-size: 18px;
+                    }
                 }
             }
             .image-service{
                 width: 58px;
                 color: $secundary-color;
+                
+                @media(min-width: 992px){
+                    font-size: 68px;
+                }
             }
         }
 
@@ -230,25 +268,109 @@ body{
            
            
             .content{
-                max-width: 228px;
+                min-width: 228px;
                
                 .title-service{
                     font-family: Patua One;
                     color: $black-color;
                     font-size: 22px;
                     margin: 8px 0;
+                    
+                    @media(min-width: 992px){
+                        font-size: 24px;
+                    }
                 }
                 .text-service{
                     font-family: Quicksand;
                     color: $black-color;
                     font-size: 16px;
+
+                    @media(min-width: 992px){
+                        font-size: 18px;
+                    }
                 }
             }
             .image-service{
                 width: 58px;
                 color: $secundary-color;
+                
+                @media(min-width: 992px){
+                    font-size: 68px;
+                }
             }
         }
     }
 }
 
+
+.project{
+
+    @media (min-width: 1280px){
+        margin: 36px auto;
+        max-width: 1280px;
+        min-width: 1280px;
+    }
+    
+    .title{
+        font-family: Patua One;
+        font-size: 34px;
+        color: $black-color;
+        margin: 36px 0 0;
+    }    
+    .places{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        img{
+            margin: 14px 0;
+            width: 156px;
+            height: 260px;
+        }
+        
+        .one-place{
+            margin: 14px 36px 0 0;
+        }
+        .two-place{
+            margin: 14px 36px 0 0;
+        }
+        .three-place{
+            margin: 14px 36px 0 0;
+        }
+        .four-place{
+            margin: 14px 36px 0 0;
+        }
+        .five-place{
+            margin: 14px 36px 0 0;
+        }
+    }
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: $primary-color;
+    background-color: $secundary-color;
+    font-size: 20px;
+    height: 96px;   
+    
+    .footer-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 16px;
+    }
+
+    .social-media{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 0 16px;
+
+        img{
+            width: 18px;
+            margin: 0 8px;
+        }
+    }
+}

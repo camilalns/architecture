@@ -187,20 +187,34 @@ body {
   }
 }
 
-.service {
-  margin: 0 16px;
-}
-
 .service .title {
   font-family: Patua One;
   font-size: 34px;
   color: #141313;
-  margin: 0 0 14px 0;
+  margin: 14px 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .service .title {
-    margin: 0 auto;
+    margin: 0 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .service .title {
+    display: flex;
+    margin: 36px auto;
+    max-width: 1280px;
+    min-width: 1280px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .service .service-block {
+    display: flex;
+    margin: 36px auto;
+    max-width: 1280px;
+    min-width: 1280px;
   }
 }
 
@@ -226,11 +240,12 @@ body {
   .service .service-block .interior-design {
     margin: 0 14px;
     padding: 0 18px;
+    width: auto;
   }
 }
 
 .service .service-block .interior-design .content {
-  max-width: 228px;
+  min-width: 228px;
 }
 
 .service .service-block .interior-design .content .title-service {
@@ -240,15 +255,33 @@ body {
   margin: 8px 0;
 }
 
+@media (min-width: 992px) {
+  .service .service-block .interior-design .content .title-service {
+    font-size: 24px;
+  }
+}
+
 .service .service-block .interior-design .content .text-service {
   font-family: Quicksand;
   color: #141313;
   font-size: 16px;
 }
 
+@media (min-width: 992px) {
+  .service .service-block .interior-design .content .text-service {
+    font-size: 18px;
+  }
+}
+
 .service .service-block .interior-design .image-service {
   width: 58px;
   color: #0C003D;
+}
+
+@media (min-width: 992px) {
+  .service .service-block .interior-design .image-service {
+    font-size: 68px;
+  }
 }
 
 .service .service-block .architecture-design {
@@ -269,7 +302,7 @@ body {
 }
 
 .service .service-block .architecture-design .content {
-  max-width: 228px;
+  min-width: 228px;
 }
 
 .service .service-block .architecture-design .content .title-service {
@@ -279,15 +312,33 @@ body {
   margin: 8px 0;
 }
 
+@media (min-width: 992px) {
+  .service .service-block .architecture-design .content .title-service {
+    font-size: 24px;
+  }
+}
+
 .service .service-block .architecture-design .content .text-service {
   font-family: Quicksand;
   color: #141313;
   font-size: 16px;
 }
 
+@media (min-width: 992px) {
+  .service .service-block .architecture-design .content .text-service {
+    font-size: 18px;
+  }
+}
+
 .service .service-block .architecture-design .image-service {
   width: 58px;
   color: #0C003D;
+}
+
+@media (min-width: 992px) {
+  .service .service-block .architecture-design .image-service {
+    font-size: 68px;
+  }
 }
 
 .service .service-block .remodeling-design {
@@ -308,7 +359,7 @@ body {
 }
 
 .service .service-block .remodeling-design .content {
-  max-width: 228px;
+  min-width: 228px;
 }
 
 .service .service-block .remodeling-design .content .title-service {
@@ -318,13 +369,106 @@ body {
   margin: 8px 0;
 }
 
+@media (min-width: 992px) {
+  .service .service-block .remodeling-design .content .title-service {
+    font-size: 24px;
+  }
+}
+
 .service .service-block .remodeling-design .content .text-service {
   font-family: Quicksand;
   color: #141313;
   font-size: 16px;
 }
 
+@media (min-width: 992px) {
+  .service .service-block .remodeling-design .content .text-service {
+    font-size: 18px;
+  }
+}
+
 .service .service-block .remodeling-design .image-service {
   width: 58px;
   color: #0C003D;
+}
+
+@media (min-width: 992px) {
+  .service .service-block .remodeling-design .image-service {
+    font-size: 68px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .project {
+    margin: 36px auto;
+    max-width: 1280px;
+    min-width: 1280px;
+  }
+}
+
+.project .title {
+  font-family: Patua One;
+  font-size: 34px;
+  color: #141313;
+  margin: 36px 0 0;
+}
+
+.project .places {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project .places img {
+  margin: 14px 0;
+  width: 156px;
+  height: 260px;
+}
+
+.project .places .one-place {
+  margin: 14px 36px 0 0;
+}
+
+.project .places .two-place {
+  margin: 14px 36px 0 0;
+}
+
+.project .places .three-place {
+  margin: 14px 36px 0 0;
+}
+
+.project .places .four-place {
+  margin: 14px 36px 0 0;
+}
+
+.project .places .five-place {
+  margin: 14px 36px 0 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: #F2F2F2;
+  background-color: #0C003D;
+  font-size: 20px;
+  height: 96px;
+}
+
+footer .footer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 16px;
+}
+
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0 16px;
+}
+
+footer .social-media img {
+  width: 18px;
+  margin: 0 8px;
 }
