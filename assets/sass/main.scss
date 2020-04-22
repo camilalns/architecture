@@ -126,14 +126,24 @@ body{
 .service{
     margin: 0 16px;
 
-    .service-block{
+    .title{
+        font-family: Patua One;
+        font-size: 34px;
+        color: $black-color;
+        margin: 0 0 14px 0;
 
-        .title{
-            font-family: Patua One;
-            font-size: 34px;
-            color: $black-color;
-            margin: 0 0 14px 0;
+        @media(min-width: 1024px){
+            margin: 0 auto;
         }
+    }
+
+    .service-block{
+        @media(min-width: 992px){
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
         .interior-design{
             display: flex;
             justify-content: center;
@@ -142,6 +152,11 @@ body{
             width: auto;
             height: 124px;
             margin: 14px 0;
+
+            @media(min-width: 992px){
+                margin: 0 14px;
+                padding: 0 18px;
+            }
            
             .content{
                 max-width: 228px;
@@ -163,7 +178,6 @@ body{
                 color: $secundary-color;
             }
         }
-
         .architecture-design{
             display: flex;
             justify-content: center;
@@ -172,6 +186,12 @@ body{
             width: auto;
             height: 124px;
             margin: 14px 0;
+
+            @media(min-width: 992px){
+                margin: 0 14px;
+                padding: 0 18px;
+            }
+           
            
             .content{
                 max-width: 228px;
@@ -202,6 +222,12 @@ body{
             width: auto;
             height: 124px;
             margin: 14px 0;
+
+            @media(min-width: 992px){
+                margin: 0 14px;
+                padding: 0 18px;
+            }
+           
            
             .content{
                 max-width: 228px;
